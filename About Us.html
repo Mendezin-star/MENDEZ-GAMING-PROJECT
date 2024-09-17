@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Football Management Game</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #2a2a2a, #000);
+            color: #e0e0e0;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            color: #ff9800;
+            padding: 1rem 0;
+            border-bottom: 3px solid #ff5722;
+            box-shadow: 0 0 10px rgba(255, 87, 34, 0.5);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        header .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #ff5722, #ff9800);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent; /* Fallback color */
+            background-clip: text;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        header nav ul li a {
+            color: #ff9800;
+            text-decoration: none;
+            font-size: 1.1rem;
+            position: relative;
+            padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a::after {
+            content: '';
+            display: block;
+            height: 3px;
+            background: #ff5722;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        header nav ul li a:hover::after {
+            transform: scaleX(1);
+        }
+
+        main {
+            padding: 2rem 1rem;
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid #ff9800;
+            box-shadow: 0 0 15px rgba(255, 87, 34, 0.6);
+            margin-bottom: 2rem;
+        }
+
+        .about-section h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #ff9800;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-section p {
+            margin: 0 0 1rem;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center; /* Center-align items */
+        }
+
+        .team-member {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 2px solid #ff9800;
+            box-shadow: 0 0 10px rgba(255, 87, 34, 0.6);
+            flex: 1 1 200px;
+            text-align: center; /* Center-align text */
+        }
+
+        .team-member img {
+            width: 150px; /* Set a fixed size for images */
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover; /* Ensure images fit the container */
+            margin-bottom: 1rem;
+        }
+
+        .team-member h3 {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: #e0e0e0;
+            padding: 1rem 0;
+            text-align: center;
+            border-top: 3px solid #ff5722;
+            box-shadow: 0 0 10px rgba(255, 87, 34, 0.6);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Soccer Supremo</h1>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="#team">Team Management</a></li>
+                    <li><a href="#fitness">Fitness Tracker</a></li>
+                    <li><a href="#challenges">Challenges</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Welcome to Football Manager! Our game is designed to provide an immersive football management experience that combines real-world fitness tracking with engaging gameplay. Our mission is to promote healthy living, inclusivity, and sustainability through the power of gaming.</p>
+                <p>Our team is passionate about creating a game that not only entertains but also makes a positive impact on the world. We believe in the power of sports to bring people together and create a better future.</p>
+                <h3>Our Team</h3>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="Sean.png" alt="Sean Mendez">
+                        <h3>Sean Mendez</h3>
+                        <p>Lead Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="rafael.png" alt="Rafael Leao">
+                        <h3>Rafael Leao</h3>
+                        <p>Game Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="messi .png" alt="Lionel Messi">
+                        <h3>Lionel Messi</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a> | <a href="#support">Support</a></p>
+            <p>Contact us at: support@example.com</p>
+        </div>
+    </footer>
+</body>
+</html>
